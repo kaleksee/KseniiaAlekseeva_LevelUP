@@ -22,32 +22,32 @@ public class Calculator {
         switch (in) {
             case "sum":
                 Addition addition = new Addition();
-                double additionResult = addition.add();
+                double additionResult = addition.addTwoDoubles();
                 System.out.println("Addition result = " + additionResult);
                 break;
             case "sub":
                 Substraction substraction = new Substraction();
-                double substractionResult = substraction.substract();
+                double substractionResult = substraction.substractTwoNumbers();
                 System.out.println("Substraction result = " + substractionResult);
                 break;
             case "mult":
                 Multiplication multiplication = new Multiplication();
-                double multiplicationResult = multiplication.multiply();
+                double multiplicationResult = multiplication.multiplyDouble();
                 System.out.println("Multiplication result = " + multiplicationResult);
                 break;
             case "power":
                 Power power = new Power();
-                double raiseToPowerResult = power.raiseToPower();
+                double raiseToPowerResult = power.raiseToPowerMath();
                 System.out.println("Result of raising to power = " + raiseToPowerResult);
                 break;
             case "fact":
                 Factorial factorial = new Factorial();
-                long factorialResult = factorial.calculateFactorial();
+                long factorialResult = factorial.calculateFactorialRecursion();
                 System.out.println("Result of factorial = " + factorialResult);
                 break;
             case "fibo":
                 Fibbonachi fibbonachi = new Fibbonachi();
-                double fib = fibbonachi. calculateFibbonachi();
+                double fib = fibbonachi. calculateFibbonachiRecursion();
                 System.out.println("Number in Fibbonachi sequence = " + fib);
                 break;
             default: {

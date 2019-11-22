@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Multiplication {
-    public double multiply() {
+    public double multiplyDouble() {
         try {
             System.out.println("Input double A");
             Scanner input = new Scanner(System.in);

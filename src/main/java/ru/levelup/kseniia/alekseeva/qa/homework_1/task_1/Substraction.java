@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Substraction {
-    public int substract() {
+    public int substractTwoNumbers() {
         try {
             System.out.println("Input integer A");
             Scanner input = new Scanner(System.in);

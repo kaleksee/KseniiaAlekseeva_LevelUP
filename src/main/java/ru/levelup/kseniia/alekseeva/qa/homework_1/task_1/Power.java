@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Power {
-    public double raiseToPower () {
+    public double raiseToPowerMath () {
         try {
             System.out.println("Input double A");
             Scanner input = new Scanner(System.in);

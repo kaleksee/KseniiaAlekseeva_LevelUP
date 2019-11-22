@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Fibbonachi {
-    public int calculateFibbonachi() {
+    public int calculateFibbonachiRecursion() {
         try {
             System.out.println("Input int A >= 0");
             Scanner input = new Scanner(System.in);

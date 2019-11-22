@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Addition {
-    public double add() {
+    public double addTwoDoubles() {
 
         try {
             System.out.println("Input double A");
