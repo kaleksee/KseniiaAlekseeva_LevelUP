@@ -7,10 +7,9 @@ public class Factorial {
 
     public long calculateFactorialRecursion() {
         try {
-            System.out.println("Input int A");
-            Scanner input = new Scanner(System.in);
-            int variableA = input.nextInt();
-            return doRecursion(variableA);
+            CalculatorInput calculatorInput = new CalculatorInput();
+            int variableA = calculatorInput.processInputInteger();
+            return calculateFactorial(variableA);
 
 
         } catch (InputMismatchException any) {
@@ -19,12 +18,17 @@ public class Factorial {
         }
     }
 
-    private long doRecursion(int a) {
+    private long calculateFactorial (int a) {
         if (a == 0) {
             return 1;
 
         } else {
-            return (a * doRecursion(a - 1));
+            int fact=1;
+            for(int i=1;i<=a;i++){
+                fact=fact*i;
+
+            }
+            return fact;
         }
 
     }

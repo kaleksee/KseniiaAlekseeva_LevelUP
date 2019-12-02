@@ -6,11 +6,9 @@ import java.util.Scanner;
 public class Substraction {
     public int substractTwoNumbers() {
         try {
-            System.out.println("Input integer A");
-            Scanner input = new Scanner(System.in);
-            int variableA = input.nextInt();
-            System.out.println("Input integer B");
-            int variableB = input.nextInt();
+            CalculatorInput calculatorInput = new CalculatorInput();
+            int variableA = calculatorInput.processInputInteger();
+            int variableB = calculatorInput.processInputInteger();
             return (variableA - variableB);
         }
         catch (InputMismatchException any) {
@@ -19,9 +17,6 @@ public class Substraction {
 
     }
 
-    public void testMethod () {
-
-    }
 
 
 }

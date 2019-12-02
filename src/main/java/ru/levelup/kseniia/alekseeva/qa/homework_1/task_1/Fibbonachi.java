@@ -6,13 +6,12 @@ import java.util.Scanner;
 public class Fibbonachi {
     public int calculateFibbonachiRecursion() {
         try {
-            System.out.println("Input int A >= 0");
-            Scanner input = new Scanner(System.in);
-            int variableA = input.nextInt();
+            CalculatorInput calculatorInput = new CalculatorInput();
+            int variableA = calculatorInput.processInputInteger();
             if (variableA < 0) {
-                throw new RuntimeException("Please check the input! A shoud be >= 0!");
+                throw new NegativeNumberException ("Please check the input! A shoud be >= 0!");
             }
-            return doRecursion(variableA);
+            return calculateFibbonachiNumber(variableA);
 
 
         } catch (InputMismatchException any) {
@@ -20,14 +19,18 @@ public class Fibbonachi {
         }
     }
 
-    public int doRecursion(int a) {
 
-        if (a == 0) {
-            return 0;
+    int calculateFibbonachiNumber (int variableA){
+        if(variableA <= 1){
+            return variableA;
         }
-        if (a == 1 | a == 2) {
-            return 1;
+        int fibbonachiNumber = 1;
+        int previousFibbonachiNumber = 1;
+        for(int i = 2; i < variableA; ++i){
+            int temp = fibbonachiNumber;
+            fibbonachiNumber += previousFibbonachiNumber;
+            previousFibbonachiNumber = temp;
         }
-        return doRecursion(a - 2) + doRecursion(a - 1);
+        return fibbonachiNumber;
     }
 }

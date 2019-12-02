@@ -6,15 +6,14 @@ import java.util.Scanner;
 public class Power {
     public double raiseToPowerMath () {
         try {
-            System.out.println("Input double A");
-            Scanner input = new Scanner(System.in);
-            double variableA = input.nextDouble();
-            System.out.println("Input int B");
-            int variableB = input.nextInt();
-            for (int i = 1; i < variableB; i++) {
-                variableA = variableA * variableA;
+            CalculatorInput calculatorInput = new CalculatorInput();
+            double variableA = calculatorInput.processInputDouble();
+            int variableB = calculatorInput.processInputInteger();
+            double result = 1;
+            for (int i=1; i<=variableB; i++){
+                result *= variableA;
             }
-            return variableA;
+            return result;
         } catch (InputMismatchException any) {
             throw new RuntimeException("Please check the input! A should be double, B should be integer!");
 
