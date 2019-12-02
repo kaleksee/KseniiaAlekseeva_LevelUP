@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Factorial {
 
-    public long calculateFactorialRecursion() {
+    public long calculateFactorial() {
         try {
             CalculatorInput calculatorInput = new CalculatorInput();
             int variableA = calculatorInput.processInputInteger();

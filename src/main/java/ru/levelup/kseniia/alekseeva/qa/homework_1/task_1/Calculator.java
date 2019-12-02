@@ -42,12 +42,12 @@ public class Calculator {
                 break;
             case "fact":
                 Factorial factorial = new Factorial();
-                long factorialResult = factorial.calculateFactorialRecursion();
+                long factorialResult = factorial.calculateFactorial();
                 System.out.println("Result of factorial = " + factorialResult);
                 break;
             case "fibo":
                 Fibbonachi fibbonachi = new Fibbonachi();
-                double fib = fibbonachi. calculateFibbonachiRecursion();
+                double fib = fibbonachi.calculateFibbonachi();
                 System.out.println("Number in Fibbonachi sequence = " + fib);
                 break;
             default: {
