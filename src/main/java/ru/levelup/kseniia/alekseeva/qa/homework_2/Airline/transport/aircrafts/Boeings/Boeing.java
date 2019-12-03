@@ -2,7 +2,7 @@ package ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.B
 
 import ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.Plane;
 
-/*
+/**
  * This is Boeing class that has its own method for nightFlightMode()
  */
 public class Boeing extends Plane {

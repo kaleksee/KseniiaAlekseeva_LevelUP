@@ -3,7 +3,7 @@ package ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.A
 import ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.Flying;
 import ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.Maintainable;
 
-/*
+/**
  * This is an AirbusA319 class that implements three methods from Flying takeoff(); fly(); land ();
  * AirbusA320 amd AirbusA319 have similar realization for fly(); land (); but different implementation for takeoff();
  * it also implements two methods from Maintainable isPreparedForDeparture() and passQuaterlyMaintenance()
@@ -11,16 +11,7 @@ import ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.Ma
 public class AirbusA319 extends Airbus implements Maintainable, Flying {
 
     public AirbusA319() {
-        System.out.println("This is how AirbusA319 takes off");
-        takeoff();
-        System.out.println("This is how AirbusA319 flies");
-        fly();
-        System.out.println("This is how AirbusA319 lands");
-        land();
-        System.out.println("This is how AirbusA319 is prepared for departure");
-        isPreparedForDeparture();
-        System.out.println("This is how AirbusA319 passes quaterly maintenance");
-        passQuaterlyMaintenance();
+
     }
 
     public void takeoff() {

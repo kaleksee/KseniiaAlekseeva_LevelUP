@@ -1,7 +1,7 @@
 package ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts.Boeings;
 
 
-/*
+/**
  * This is an BoeingExamination class which specifies checks for Boeings depending on season of the year
  */
 

@@ -1,7 +1,11 @@
 package ru.levelup.kseniia.alekseeva.qa.homework_2.Airline.transport.aircrafts;
-/*
+
+import java.util.TreeSet;
+
+/**
  * This is an abstract class Plane, main class, that will be later extended by classes Airbus and Boeing
  * Class Plane implements Comparable interface, allowing to compare two planes by flying range
+ *
  */
 
 abstract public class Plane implements Comparable<Plane> {
@@ -60,8 +64,8 @@ abstract public class Plane implements Comparable<Plane> {
 
         if (flyingRange == o.flyingRange) {
             return 0;
-        } else {
-            if (flyingRange > o.flyingRange) {
+        } else if
+             (flyingRange > o.flyingRange) {
                 return 1;
             } else {
                 return -1;
@@ -69,7 +73,8 @@ abstract public class Plane implements Comparable<Plane> {
         }
 
 
-    }
+
+
 
     public String toString() {
         return "Plane " + this.name;

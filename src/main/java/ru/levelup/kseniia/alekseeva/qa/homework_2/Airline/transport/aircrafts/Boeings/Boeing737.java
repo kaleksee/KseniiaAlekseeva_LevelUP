@@ -8,7 +8,7 @@ import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 
-/*
+/**
  * This is an Boeing737 class that implements three methods from Flying takeoff(); fly(); land ();
  * if we have time from 18 pm to 6 am night flight mode will be activated
  *it also implements Maintainable and executed checks depending on what month we have today
@@ -16,16 +16,7 @@ import java.util.Date;
 public class Boeing737 extends Boeing implements Flying, Maintainable {
 
     public Boeing737() {
-        System.out.println("This is how Boeing737 takes off");
-        takeoff();
-        System.out.println("This is how Boeing737 flies");
-        fly();
-        System.out.println("This is how Boeing737 lands");
-        land();
-        System.out.println("This is how Boeing737 is prepared for departure");
-        isPreparedForDeparture();
-        System.out.println("This is how Boeing737 passes quaterly maintenance");
-        passQuaterlyMaintenance();
+
     }
 
     public void takeoff() {
@@ -49,15 +40,14 @@ public class Boeing737 extends Boeing implements Flying, Maintainable {
         System.out.println("Execute Check for 'Boeing737'");
         return true;
     }
-
+    /**
+     * The boeing passes examinations on following dates
+     * January, 1
+     * March, 1
+     * June, 1
+     * September, 1
+     */
     public void passQuaterlyMaintenance() {
-        /*
-         The boeing passes examinations on following dates
-         January, 1
-         March, 1
-         June, 1
-         September, 1
-         */
         Date date = new Date();
         LocalDate localDate = date.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
         int month = localDate.getMonthValue();
