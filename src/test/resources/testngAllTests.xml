@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CalculatorTest">
+
+
+    <test name="AdditionSubstractionTest">
+        <classes>
+            <class name="homework3.SubTest"/>
+            <class name="homework3.SumTest"/>
+        </classes>
+
+    </test>
+    <test name="MultiplyingDivisionTest">
+        <classes>
+            <class name="homework3.DivTest"/>
+            <class name="homework3.MultTest"/>
+
+        </classes>
+
+    </test>
+
+</suite>
+
