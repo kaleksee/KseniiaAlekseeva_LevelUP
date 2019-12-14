@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CalculatorTest">
+
+
+    <test name="AdditionSubstractionTest">
+        <classes>
+            <class name="homework4.ex1.LoginTest"/>
+            <class name="homework4.ex2.AddUser"/>
+        </classes>
+
+    </test>
+
+</suite>
+

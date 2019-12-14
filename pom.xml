@@ -7,6 +7,11 @@
     <groupId>TestAuto</groupId>
     <artifactId>Auto</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <profiles>
+       <profile>
+           <id>homework4</id>
+       </profile>
+    </profiles>
     <properties>
         <java.source.version>1.8</java.source.version>
         <java.target.version>1.8</java.target.version>
@@ -76,8 +81,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testngAdditionSubstraction.xml</suiteXmlFile>
-                        <suiteXmlFile>src/test/resources/testngMultiplicationDivision.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/SeleniumTest.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
