@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
-public class SeleniumDriverBase {
+public class SeleniumDriverBaseUsersBugred {
     protected WebDriver driver;
 
     @BeforeMethod
@@ -17,6 +17,7 @@ public class SeleniumDriverBase {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
+        driver.get("http://users.bugred.ru/");
     }
 
     @AfterMethod
