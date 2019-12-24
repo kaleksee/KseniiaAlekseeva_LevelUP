@@ -81,7 +81,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/SeleniumTest.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/SeleniumPO.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
