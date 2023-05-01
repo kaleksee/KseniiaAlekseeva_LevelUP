@@ -17,7 +17,7 @@
         <java.target.version>1.8</java.target.version>
         <encoding.version>UTF-8</encoding.version>
 
-        <testng.version>7.0.0</testng.version>
+        <testng.version>7.7.0</testng.version>
         <selenium.version>3.141.59</selenium.version>
         <hamcrest.version>2.1</hamcrest.version>
         <webdrivermanager.version>3.7.1</webdrivermanager.version>
